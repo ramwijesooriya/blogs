@@ -7,6 +7,7 @@ const Blogs = () => {
 
   <div >
   <h1>well come our blogs website
+    If you want create post press create button
   </h1>
   </div>
     <a href='/AddPostPage'>
