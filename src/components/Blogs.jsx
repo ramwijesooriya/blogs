@@ -5,9 +5,9 @@ const Blogs = () => {
     <div>
 <div className='Create_post_BTN'>
 
-  <div>
-  
-    data will display here
+  <div >
+  <h1>well come our blogs website
+  </h1>
   </div>
     <a href='/AddPostPage'>
 
