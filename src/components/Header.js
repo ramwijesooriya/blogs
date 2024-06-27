@@ -4,7 +4,7 @@ import React from 'react';
 const Header = () => {
   return (
     <header>
-      <h1> My Blog </h1>
+      <h1 className='font-bold text-6xl italic"'> My Blog </h1>
     </header>
   );
 };

@@ -5,7 +5,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import AddPostPage from './components/AddPostPage';
 import Blogs from './components/Blogs';
-
+import Login from './components/Login';
 import BlogListPage from './components/BlogListPage';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
@@ -21,6 +21,7 @@ const App = () => {
         <Route path="/" element={<Blogs/>} />
         <Route path="/AddPostPage" element={<AddPostPage/>} />
         <Route path="/BlogListPage" element={<BlogListPage/>} />
+        <Route path="/Login" element={<Login/>} />
        
 
 

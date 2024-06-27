@@ -28,22 +28,24 @@ const BlogListPage = () => {
   }, []);
 
   if (loading) {
-    return <p>Loading...</p>;
+    return <p className="text-center text-xl">Loading...</p>;
   }
 
   if (error) {
-    return <p>{error}</p>;
+    return <p className="text-center text-red-500">{error}</p>;
   }
 
   return (
-    <div>
-      <h1>Blog Posts</h1>
-      {posts.map((post) => (
-        <div key={post.id}>
-          <h2>{post.title}</h2>
-          <p>{post.description}</p>
-        </div>
-      ))}
+    <div className="min-h-screen bg-gray-100 p-8">
+      <h1 className="text-4xl font-bold mb-8 text-center">Blog Posts</h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {posts.map((post) => (
+          <div key={post.id} className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out">
+            <h2 className="text-2xl font-bold mb-4">{post.title}</h2>
+            <p className="text-gray-700">{post.description}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
