@@ -3,7 +3,9 @@ import { Link } from 'react-router-dom';
 
 const Blogs = () => {
   return (
+
     <div className="min-h-screen bg-gray-100 flex items-center justify-center">
+
       <div className="bg-white p-8 rounded-lg shadow-lg text-center">
         <h1 className="text-5xl font-bold mb-6">
           Welcome to Our Blogs Website
@@ -16,7 +18,13 @@ const Blogs = () => {
             Create Post
           </button>
         </Link>
+        <div className='p-5'>
+<Link to="/Login">
+            <button className='right-0 top-0'>Sign in</button>
+            </Link>
+</div>
       </div>
+      
     </div>
   );
 };
